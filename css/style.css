@@ -295,10 +295,10 @@ div.img1 img {
 
 .social-mu ul {
 	position: absolute;
-	left: 50%;
+	left: 25%;
 	transform: translate(-50%, -50%);
 	padding: 5% 0;
-	margin: 0;
+	margin: 25%;
 	display: flex;
 }
 .social-mu ul li {
