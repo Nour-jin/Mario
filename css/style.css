@@ -1,0 +1,417 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	src: url(fonts/caviar_dreams/CaviarDreams.ttf);
+	font-family: cav;
+}
+@font-face {
+	src: url(fonts/comfortaa/Comfortaa-Bold.ttf);
+	font-family: com;
+}
+@font-face {
+	src: url(fonts/Candal/Candal-Regular.ttf);
+	font-family: vag;
+}
+
+body {
+}
+
+ul.headerUlNav li {
+	display: inline;
+	padding: 10px 11px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.para div p a {
+	color: dodgerblue;
+}
+
+/*.headerUlNav li:hover {
+	text-shadow: 5px 5px 15px rgb(0, 0, 0);
+	color: #18b491;
+	border: floralwhite 1px solid;
+	padding: 10px 10px;
+	animation-name: box;
+	animation-duration: 1s;
+	animation-delay: 0;
+	animation-fill-mode: forwards;
+}*/
+
+.container {
+	text-align: right;
+}
+
+.bat {
+	border-radius: 20px;
+	border: 1px solid #3498db;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: com;
+	cursor: pointer;
+	margin: 10px;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.bat::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #3498db;
+	z-index: -1;
+	transition: 0.8s;
+}
+
+.bat,
+.bat3 {
+	color: #3498db;
+}
+.bat2 {
+	color: white;
+}
+
+.bat1:hover,
+.bat3:hover {
+	color: white;
+}
+.bat2:hover {
+	color: #3498db;
+}
+
+.bat1::before,
+.bat3::before {
+	bottom: 0;
+	border-radius: 80% 80% 0% 0%;
+}
+
+.bat1:hover::before,
+.bat3:hover::before {
+	height: 170%;
+}
+
+.bat2::before {
+	top: 0;
+	border-radius: 0% 0% 50% 50%;
+	height: 180%;
+}
+
+.bat2:hover::before {
+	height: 0;
+}
+
+@keyframes name {
+	0% {
+		left: 1000px;
+		color: #55acee;
+	}
+	50% {
+		left: 0px;
+	}
+	70% {
+		color: #e4405f;
+	}
+
+	100% {
+		color: black;
+	}
+}
+
+.logo {
+	position: absolute;
+	left: 90px;
+
+	font-size: 25px;
+	font-family: vag;
+	text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.24);
+}
+
+.logoName {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+}
+
+.mario-img {
+	text-align: center;
+	padding-top: 90px;
+}
+
+.headerUlNav {
+	padding-top: 30px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
+	padding-right: 40px;
+	font-family: com;
+	font-size: 20px;
+	text-align: right;
+}
+
+.headerNav {
+	position: relative;
+	top: 0;
+	margin: 20px 20px;
+}
+
+.mainHeader {
+	text-align: center;
+	font-size: 70px;
+	padding-top: 30px;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
+	animation-name: name;
+	animation-duration: 5s;
+	position: relative;
+	animation-timing-function: ease-out;
+}
+
+.para {
+	font-size: 15px;
+	text-align: center;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 30px;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+.img1 {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 40px;
+}
+
+div.img1 img {
+	display: inline;
+	padding: 10px;
+	position: relative;
+}
+
+.card {
+	font-family: 'Sarabun', sans-serif;
+}
+
+.card1 {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 30px 0px 30px;
+	font-size: 25px;
+}
+
+.card1 p {
+	padding: 0px 0 0 40px;
+}
+
+.card2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 30px 40px 30px;
+	font-size: 25px;
+}
+
+.card2 p {
+	padding: 0px 40px 0 0px;
+}
+
+.card3 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 30px 0px 30px;
+	font-size: 25px;
+}
+
+.card3 p {
+	padding: 0px 0 0 40px;
+}
+
+.fotter {
+	padding-top: 45px;
+	margin: 10px;
+	border-radius: 12px;
+}
+
+.hline {
+	width: 75%;
+	height: 1px;
+	background: rgb(226, 226, 226);
+	position: absolute;
+	transform: translate(-50% -50%);
+	margin-left: 180px;
+	margin-top: 280px;
+}
+
+.nline {
+	margin: 15px 0;
+	width: 100%;
+	height: 1px;
+	background: rgb(226, 226, 226);
+}
+
+.copyRight {
+	position: absolute;
+	left: 15%;
+	margin-top: 20%;
+	font-family: cav;
+	font-size: 11px;
+}
+
+.fotter li:hover {
+	text-decoration: underline;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.349);
+}
+
+.menu {
+	position: absolute;
+	left: 28%;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	font-size: 11px;
+	color: rgb(61, 61, 61);
+	font-family: 'ABeeZee', sans-serif;
+}
+
+.menu ul {
+	margin: 50px 25px;
+}
+
+.menu ul li {
+	margin: 0 0 7px;
+	display: block;
+}
+
+.menu h4 {
+	margin: 0 0 12px;
+	font-size: 14px;
+}
+
+.social-menu ul {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5% 0;
+	margin: 24% 0;
+	display: flex;
+}
+.social-menu ul li {
+	list-style: none;
+	margin: 0 10px;
+}
+.social-menu ul li svg {
+	color: #000000;
+	padding-top: 12px;
+	width: 50%;
+	height: 50%;
+	transition: .5s;
+}
+.social-menu ul li svg:hover {
+	color: #ffffff;
+}
+.social-menu ul li a {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	transition: 0.5s;
+	transform: translate(0, 0px);
+	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+	transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+	background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+	background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+	background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+	background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+	background-color: #0077b5;
+}
+
+.middle {
+	top: 50%;
+	left: 50%;
+}
+.btn {
+	background: none;
+	border: 2px solid #000;
+	font-family: "montserrat", sans-serif;
+	text-transform: uppercase;
+	padding: 12px 20px;
+	min-width: 200px;
+	margin: 10px;
+	cursor: pointer;
+	transition: color 0.4s linear;
+	position: relative;
+}
+.btn:hover {
+	color: #fff;
+}
+.btn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: -1;
+	transition: transform 0.5s;
+	transform-origin: 0 0;
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before {
+	transform: scaleX(0);
+}
+.btn2::before {
+	transform: scaleY(0);
+}
+.btn1:hover::before {
+	transform: scaleX(1);
+}
+.btn2:hover::before {
+	transform: scaleY(1);
+}
+
+.btn3::before {
+	transform: scaleX(0);
+}
+
+.btn3:hover::before {
+	transform: scaleX(1);
+}
+
+.btn1 {
+	position: absolute;
+	left: 60%;
+	margin-top: -1050px;
+}
+
+.btn2 {
+	position: absolute;
+	left: 23%;
+	margin-top: -610px;
+}
+
+.btn3 {
+	position: absolute;
+	right: 30%;
+	margin-top: -35px;
+}
