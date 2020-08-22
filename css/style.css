@@ -297,7 +297,7 @@ div.img1 img {
 	position: absolute;
 	left: 25%;
 	transform: translate(-50%, -50%);
-	padding: 4% 0;
+	padding: 5% 0;
 	margin: 25%;
 	display: flex;
 }
@@ -361,6 +361,7 @@ div.img1 img {
 	cursor: pointer;
 	transition: color 0.4s linear;
 	position: relative;
+	border-radius: 5px;
 }
 .btn:hover {
 	color: #fff;
@@ -377,6 +378,7 @@ div.img1 img {
 	transition: transform 0.5s;
 	transform-origin: 0 0;
 	transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+	border-radius: 3px;
 }
 .btn1::before {
 	transform: scaleX(0);
@@ -401,18 +403,18 @@ div.img1 img {
 
 .btn1 {
 	position: absolute;
-	left: 60%;
-	margin-top: -1050px;
+	left: 52%;
+	margin-top: -1015px;
 }
 
 .btn2 {
 	position: absolute;
-	left: 23%;
-	margin-top: -610px;
+	left: 34%;
+	margin-top: -600px;
 }
 
 .btn3 {
 	position: absolute;
-	right: 30%;
-	margin-top: -35px;
+	right: 33%;
+	margin-top: -42px;
 }
